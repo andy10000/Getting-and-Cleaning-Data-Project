@@ -44,7 +44,7 @@ std_col_idx <- grep("std",names(x_data),ignore.case=TRUE)
 std_col_names <- names(x_data)[std_col_idx]
 mean_std_data <- x_data[,c(mean_col_names, std_col_names)]
 
-# Combine y_data with x_data to create final merged data set
+# Combine y_data with mean_std_data to create final merged data set
 all_data <- cbind(y_data, mean_std_data)
 
 # Rename column "V1" in all_data to activity_id
